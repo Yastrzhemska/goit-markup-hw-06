@@ -529,6 +529,76 @@ img {
 .soc-media-link:focus {
     background-color: #31D0AA;
 }
+
+.footer-form-div {
+    margin-left: 80px;
+}
+
+.footer-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--color-white-text);
+    
+    margin-bottom: 16px;
+}
+
+.footer-field {
+    display: flex;
+
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.footer-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.0;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-send-btn {
+    margin-left: 24px;
+
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    gap: 16px;
+
+    color: var(--color-white-text);
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    fill: var(--color-white-text);
+    display: flex;
+
+    transition: background-color var(--transition-duration) var(--transition-funct);
+
+}
+
+.footer-send-btn:hover,
+.footer-send-btn:focus {
+    background-color: var(--accent-color)
+}
+
+
 /*--------------------------------portfolio page--------------------------------*/
 
 .portfolio-section {
@@ -650,6 +720,8 @@ img {
 .list-portfolio-link:focus .overlay {
     transform: translate(0, 0);
 }
+
+
 
 /*--------------------------------modal--------------------------------*/
 
