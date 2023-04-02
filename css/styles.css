@@ -843,7 +843,26 @@ textarea::placeholder {
     margin-bottom: 24px;
 }
 
-.check-text::before {
+.check-text span {
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid var(--logo-color-second);
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    fill: transparent;
+}
+
+.modal-check:checked + .check-text span {
+    background-color: var(--accent-color);
+    border: none;
+    fill: var(--color-studiofooter-btnprof);
+}
+
+/* .check-text::before {
     content: '';
     width: 16px;
     height: 16px;
@@ -851,7 +870,16 @@ textarea::placeholder {
     border-radius: 2px;
 
     display: block;
-}
+} */
+
+
+/* .modal-check:checked + .check-text::before {
+    background-color: var(--accent-color);
+    border: none;
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+} */
 
 .check-link {
     font-weight: 400;
@@ -861,15 +889,6 @@ textarea::placeholder {
     text-decoration-line: underline;
     color: var(--logo-color-first);
 }
-
-.modal-check:checked + .check-text::before {
-    background-color: var(--accent-color);
-    border: none;
-    background-image: url(../images/check.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 
 .modal-send-btn {
     margin-top: 24px;
