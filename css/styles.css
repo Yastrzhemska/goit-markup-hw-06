@@ -775,6 +775,9 @@ img {
     color: var(--logo-color-second);
     outline: transparent;
     background-color: transparent;
+
+    transition: border-color var(--transition-duration) var(--transition-funct);
+    
     
 }
 
@@ -793,7 +796,10 @@ img {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+
+    transition: fill var(--transition-duration) var(--transition-funct);
 }
+
 
 .modal-comment-text {
     width: 100%;
@@ -806,6 +812,8 @@ img {
 
     padding: 16px;
     font-size: 14px;
+
+    transition: border-color var(--transition-duration) var(--transition-funct);
 }
 
 textarea::placeholder {
@@ -830,7 +838,7 @@ textarea::placeholder {
 
     display: flex;
     gap: 8px;
-    align-items: baseline;
+    align-items: center;
     margin-top: 16px;
     margin-bottom: 24px;
 }
@@ -875,6 +883,10 @@ textarea::placeholder {
     border-radius: 4px;
     padding: 16px 32px;
     margin: auto;
+    transition: background-color var(--transition-duration) var(--transition-funct);
+}
 
-    
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+    background-color: var(--accent-color);
 }
