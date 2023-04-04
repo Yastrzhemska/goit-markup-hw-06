@@ -531,7 +531,7 @@ img {
 }
 
 .footer-form-div {
-    margin-left: 80px;
+    margin-left: auto;
 }
 
 .footer-form-title {
@@ -544,7 +544,7 @@ img {
     margin-bottom: 16px;
 }
 
-.footer-field {
+.footer-form {
     display: flex;
 
 }
@@ -556,6 +556,9 @@ img {
     border: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    font-size: 14px;
+    color: var(--color-white-text);
+    outline: none;
     border-radius: 4px;
     padding-left: 16px;
     padding-top: 8px;
@@ -754,7 +757,7 @@ img {
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 24px;
+    padding: 72px 24px 24px;
 
     position: absolute;
     top: 50%;
@@ -809,7 +812,6 @@ img {
 }
 
 .modal-title {
-    margin-top: 48px;
     margin-bottom: 16px;
 
     font-weight: 500;
@@ -850,7 +852,7 @@ img {
     padding-left: 38px;
     font-size: 14px;
     color: var(--logo-color-second);
-    outline: transparent;
+    outline: none;
     background-color: transparent;
 
     transition: border-color var(--transition-duration) var(--transition-funct);
@@ -969,6 +971,9 @@ textarea::placeholder {
 
 .modal-send-btn {
     margin-top: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     display: block;
     color: var(--color-white-text);
     cursor: pointer;
